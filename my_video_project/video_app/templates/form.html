@@ -1,0 +1,13 @@
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {% if text_from_url %}
+        <p>Text from URL: {{ form.text.value }}</p>
+        {{ form.text.as_hidden }}
+    {% else %}
+        <label for="text">Text:</label><br>
+        {{ form.text }}<br><br>
+    {% endif %}
+    <label for="image">Image:</label><br>
+    {{ form.image }}<br><br>
+    <input type="submit" value="Generate Video">
+</form>

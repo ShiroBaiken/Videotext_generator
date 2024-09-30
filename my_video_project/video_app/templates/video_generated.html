@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Generated</title>
+     <meta http-equiv="refresh" content="0; url={{ video_url }}" />
+</head>
+<body>
+    <h1>Your video is ready!</h1>
+    <a href="{{ video_url }}" download hidden>Download Link</a>
+    <video width="320" height="240" controls>
+        <source src="{{ video_url }}" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
+</body>
+</html>
