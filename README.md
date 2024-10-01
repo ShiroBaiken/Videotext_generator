@@ -1,0 +1,1 @@
+Script for generating text over image, sliding right to left. Can be used as Django app via host/video/generate. Text could be passed both trough url and django form. If no imagee provided - generates text over pre-set background
